@@ -11,9 +11,15 @@ Logo abaixo está a descrição de um pequeno teste para avaliar se o candidato 
 
 - A versão do php terá que ser php 7.0.
 
-- O sistema deverá ser desenvolvido em ambiente Linux. 
+- O sistema deverá ser desenvolvido em ambiente Linux de preferência Ubuntu
 
-- O banco de dados você poderá usar Mysql ou Postgres.
+- O banco de dados você poderá usar MariaDB ou Postgres.
+
+- Faz um "Fork" aqui no github do projeto
+
+- Faça um push do projeto
+
+- Crie Issues para as dúvidas
 
 
 # Desenvolvendo aplicativo
