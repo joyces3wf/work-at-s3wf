@@ -9,7 +9,6 @@ Logo abaixo está a descrição de um pequeno teste para avaliar se o candidato 
 
 # Aplicativo versão / PHP 7
 
-```php
 Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser executada em um segundo momento, antes disso teremos que logar no aplicativo.
 
 # Requisitos Login
@@ -43,4 +42,3 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 
 - Requisitos programa script para gerar csv
 
-```
