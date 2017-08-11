@@ -7,9 +7,11 @@ A S3WF é uma fábrica de software que tem como foco principal o desenvolvimento
 A nossa equipe é composta por pessoas que amam o que fazem e sempre estamos à procura de novos talentos.
 Logo abaixo está a descrição de um pequeno teste para avaliar se o candidato possui algumas das habilidades básicas para trabalhar conosco.
 
-# Aplicativo versão / PHP 7 e  banco de dados Mysql ou Postgres
+# Aplicativo versão / PHP 7 e  banco de dados Mysql ou Postgres / sistema operacional Linux
 
 Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser executada em um segundo momento, antes disso teremos que logar no aplicativo.
+
+O sistema deverá ser desenvolvido em ambiente linux.
 
 # Requisitos Login
 
@@ -94,10 +96,11 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 - A organização do fonte poderá ser feita da melhor forma que encontrar exemplo de estrutura:
 
 ```sh
-      index.php
-      src/class
-      src/config
-      cron/scripts
+      index.php 
+      src/class (classes do sistema)
+      src/config (configs de banco por exemplo)
+      cron/ (script que irá executar em bash ou linha de comando)
+      scripts-sql/ (os exports das tabelas criadas e seus inserts os dumps)
       img
       css
       js
@@ -119,7 +122,7 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 
 ```php
 
-<?php print "Desejamos aos candidatos uma boa sorte!!!";
+<?php print "Desejamos aos candidatos uma boa sorte!!!"; ?>
 
 ```
 
