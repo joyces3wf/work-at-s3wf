@@ -7,11 +7,18 @@ A S3WF é uma fábrica de software que tem como foco principal o desenvolvimento
 A nossa equipe é composta por pessoas que amam o que fazem e sempre estamos à procura de novos talentos.
 Logo abaixo está a descrição de um pequeno teste para avaliar se o candidato possui algumas das habilidades básicas para trabalhar conosco.
 
-# Aplicativo versão / PHP 7 e  banco de dados Mysql ou Postgres / sistema operacional Linux
+# Pré-requisitos do sistema
+
+- A verso do php terá que ser php 7.
+
+- O sistema deverá ser desenvolvido em ambiente Linux. 
+
+- O bando de dados você poderá usar Mysql ou Postgres.
+
+
+# Desenvolvendo aplicativo
 
 Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser executada em um segundo momento, antes disso teremos que logar no aplicativo.
-
-O sistema deverá ser desenvolvido em ambiente linux.
 
 # Requisitos Login
 
