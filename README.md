@@ -47,7 +47,7 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 
 # Requisitos Ambiente admin , após clicar em “gerar csv”
 
-- Quando clicar em gerar csv na verdade o seu AJAX irá enviar para o PHP qual tarefa terá que ser executada e mais nada, o retorno é feito em json sucesso ou erro, e um algo para desativar o button ou enviar um msg para que o button altere o seu value para “em andamento”
+- Quando clicar em "gerar csv" na verdade o seu AJAX irá enviar para o PHP qual tarefa terá que ser executada e mais nada, o retorno é feito em json sucesso ou erro, e um algo para desativar o button ou enviar um msg para que o button altere o seu value para “em andamento”
 
 - O programa PHP irá setar em uma tabela esta ação e mais nada, armazenar qual tarefa será executada, data inicio e hora inicio e um status de execução.
 
@@ -71,10 +71,31 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 
 - Tratar a possibilidade do script ser executado simultaneamente e conflitar com os registros
 
+# Criação Banco de dados e tabelas
+
+- Criar uma banco de dados para aplicação no Mysql ou Postgres
+
+- Usar o PDO do PHP e nada mais
+
+- Tabelas a ser criadas ( app_login, app_tarefas, app_agedamento_de_tarefas )
+
 # Fim de nosso programa
 
 - Após finalizado nosso script php, ao da F5 na tela ele irá apresentar o link para baixar o arquivo, e as informaçes de data e tamanho do arquivo.
 
+- O button fica ativo novamente para que o usurio possa repetir o processo.
+
+# Recomendações
+
+- Escreva testes unitários 
+
+- Não preocupa-se com o código perfeito, lembre-se é somente um teste
+
+- Crie Classes para reutilização e melhor organização do seu código
+
+- Faça o melhor que conseguir
+
+Desejamos aos candidatos uma boa sorte!!!
 
 
 
