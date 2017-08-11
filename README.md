@@ -14,31 +14,72 @@ Você deve implementar um aplicativo em php que irá agendar uma tarefa para ser
 # Requisitos Login
 
  - Tela de Login e senha
+ 
  - Apresentar os erros possíveis se não conseguir logar
+ 
  - Usar javascript + jquery ou qualquer outro framework de domínio para tratar os erros na tela ( da forma mais simples que encontrar)
+ 
  - Os envios dos dados do login e senha tem que ser feitos com Ajax ( importante )
+ 
  - Os retornos de erro terão que ser feito com Ajax retornando Json ( importante )
+ 
  - Quando logar com sucesso criara uma sessão para que o usuário permaneça na tela de admin
 
 # Requisitos Ambiente admin , após logar 
 
  - O ambiente administrativo é simples só terá mesmo nossa tabela em HTML contendo uma lista das tarefas a serem executadas e mais nada.
+ 
  - Nossa tabela em Html terá 08  colunas e 2 linhas
-  Data inicial, Hora Inicial, Data Final, Hora Final, Tamanho do csv, Nome Csv, Download, Ação
-  
+ 
+ - Data inicial, Hora Inicial, Data Final, Hora Final, Tamanho do csv, Nome Tarefa, Download, Ação
+ 
+ - A coluna ação é o "Gerar Csv"
+ 
+ - A coluna Download irá ter um link "baixar" onde ele irá dar download do arquivo.
+  
 # Criar o layout acima na tela do admin
 
-- O button gerar csv irá disparar um AJAX para que possa agendar a execução
+- O button "gerar csv" irá disparar um AJAX para que possa agendar a execução
+
 - Após disparar o ajax, o programa irá setar que a tarefa selecionada está pronta para ser executada.
+
 - E o button na tela da ação irá ficar desativado enquanto não finaliza a execução.
 
 # Requisitos Ambiente admin , após clicar em “gerar csv”
 
 - Quando clicar em gerar csv na verdade o seu AJAX irá enviar para o PHP qual tarefa terá que ser executada e mais nada, o retorno é feito em json sucesso ou erro, e um algo para desativar o button ou enviar um msg para que o button altere o seu value para “em andamento”
 
-- O programa PHP irá setar em uma tabela esta ação e mais nada.
+- O programa PHP irá setar em uma tabela esta ação e mais nada, armazenar qual tarefa será executada, data inicio e hora inicio e um status de execução.
 
-- Caso faço F5 na ou atualizo a tela de alguma forma o programa irá entender que já foi clicado na ação e o mesmo fica desativado ou avisar que está “em andamento” a execução da tarefa.
+- Os status podem ser: 1 => pronto para executar, 2 => em andamento , 3 => erro, 4 => concluido
 
-- Requisitos programa script para gerar csv
+- Caso faço F5 ou atualizo a tela o programa irá entender que já foi clicado na ação e o mesmo fica desativado ou avisar que está “em andamento” a execução da tarefa.
+
+# Requisitos programa script para gerar csv
+
+- Você irá desenvolver um script que irá rodar em bash, ou seja php -q programa.php
+
+- O programa bash irá ler sua tabela onde consta as tarefas a serem executadas
+
+- O programa irá gerar um arquivo .csv
+
+- O arquivo csv tem o seguinte layout: id;nome;matricula
+
+- Faça uma função ou método para criar este arquivo com nomes, ids e matriculas fictícias até 1000 linhas, coloca um sleep de 5 segundos antes de gerar o arquivo.
+
+- Assim que o programa acabar de gerar o csv ele deve setar a base com as informações
+
+- Tratar a possibilidade do script ser executado simultaneamente e conflitar com os registros
+
+# Fim de nosso programa
+
+- Após finalizado nosso script php, ao da F5 na tela ele irá apresentar o link para baixar o arquivo, e as informaçes de data e tamanho do arquivo.
+
+
+
+
+
+
+
+
 
